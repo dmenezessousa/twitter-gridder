@@ -1,0 +1,271 @@
+
+#app{
+  margin-left: 600px;
+  margin-right: auto;
+  width: 800px;
+  height: 1139px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 7% 12% 11% 15% 5% 5% 20% 24%;
+  grid-template-areas: 
+  "header header header header"
+  "img img img img"
+  "logo logo logo logo"
+  "bio bio bio bio"
+  "number number number number"
+  "buttons buttons buttons buttons"
+  "text text text text"
+  "footer footer footer footer"
+}
+
+#header{
+  margin-top: -20px;
+  width: 1000px;
+  height: 160px;
+  grid-area: header;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 10% 90%;
+  grid-template-areas: 
+  "arrow tit"
+  "arrow subtit"
+}
+
+#arrow{
+  grid-area: arrow;
+  width:80px;
+  height:80px;
+  margin-top: 5px;
+}
+
+#tit{
+  grid-area: tit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+#subtit{
+  grid-area: subtit;
+}
+
+h1{
+  font-size: 30px;
+}
+
+h3{
+  margin-top: -20px;
+  font-size: 15px;
+  color:grey;
+}
+
+#home{
+  grid-area: home;
+  width: 30px;
+  height: 30px;
+  margin:20px;
+}
+#search{
+  grid-area: search;
+  width: 30px;
+  height: 30px;
+  margin:20px;
+}
+#bell{
+  grid-area: bell;
+  width: 30px;
+  height: 30px;
+  margin:20px;
+}
+#mail{
+  grid-area: mail;
+  width: 30px;
+  height: 30px;
+  margin:20px;
+}
+
+#veri{
+  width:20px;
+  height: 20%;
+}
+
+#picture{
+  grid-area: img;
+  height:180px;
+  width: 600px
+}
+
+#logo{
+  
+  width: 600px;
+  grid-area: logo;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 5% 15% 75% 5%;
+  grid-template-areas: 
+  ". avatar fol ."
+}
+
+#avatar{
+  margin-top: 50px;
+  grid-area: avatar;
+  width: 80px;
+  height:80px;
+  border-radius: 80px;
+}
+
+#fol{
+  padding-top: 30px;
+  grid-area: fol;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#dots{
+  width:30px;
+  height:10px;
+  border: 1px solid rgb(32,161,240);
+  border-radius: 80px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+#follow{
+  color: rgb(32,161,240);
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(32,161,240);
+  margin-left: 10px;
+}
+
+#tit1{
+  grid-area: tit1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#title2{
+  display: flex;
+  flex-direction: column;
+}
+ #bio{
+   padding-bottom: 100px;
+   grid-area: bio;
+   display: grid;
+   width:800px;
+   grid-row: 20% 80%;
+   grid-column: 80% 20%;
+   margin-left: 20px;
+   grid-template-areas: 
+   "tit1 ." 
+   "biotext ."
+ }
+
+ #biotext{
+   grid-area: biotext;
+   width:500px;
+   font-size: 20px;
+   margin-top: -5px;
+ }
+
+#veri1{
+  width:20px;
+  height: 20px;
+}
+
+#number{
+  width:600px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 30% 30% 25% 25%;
+  grid-template-areas: 
+  "ing . er ."
+}
+
+#ing{
+  grid-area: ing;
+}
+
+#er{
+  grid-area: er;
+}
+
+#following, #followers{
+  font-size: 20px;
+  color:grey;
+  margin-top: 20px;
+}
+b{
+  color:black;
+}
+
+.button{
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(53, 53, 53, 0.753);
+  font-size: 22px;
+
+}
+
+#buttons{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 600px;
+  grid-area: buttons;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 20% 35% 20% 35%;
+  grid-template-areas: 
+  "t w m l"
+}
+#twe{
+  grid-area: t;
+  color: rgb(32,161,240);
+  border-bottom: 1px rgb(32,161,240) solid;
+  padding-bottom: -100em;
+}
+#twr{
+  grid-area: w;
+}
+#med{
+  grid-area: m;
+}
+#lik{
+  grid-area: l;
+}
+
+#tweet{
+  width:550px;
+  grid-area: text;
+  margin-left: 10px;
+  border-bottom: 1px rgba(100, 100, 100, 0.267) solid;
+}
+
+#footer{
+  margin-left: 20px;
+  grid-area: footer;
+  display:grid;
+  width:600px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(4, 25%);
+  grid-template-areas: 
+  "home search bell mail"
+}
+
+h3, p, a{
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,h2{
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
